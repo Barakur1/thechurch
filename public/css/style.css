@@ -1,0 +1,326 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+:root{--ink:#18231f;
+    --muted:#65706b;
+    --cream:#f7f5ef;
+    --paper:#fff;--line:#e5e2d9;
+    --accent:#244f45;--gold:#b58b45}
+*{box-sizing:border-box}
+
+ body{margin:0;
+            color:var(--ink);
+            font-family:"DM Sans",Arial,sans-serif;
+            background:var(--paper);
+            line-height:1.65}a{color:inherit;
+            text-decoration:none}header{position:sticky;
+            top:0;
+            background:rgba(255,255,255,.96);
+            border-bottom:1px solid var(--line);
+            z-index:10}
+.nav{max-width:1180px;
+                margin:auto;
+                min-height:72px;
+                display:flex;
+                align-items:center;
+                justify-content:space-between;
+                padding:0 24px}
+.brand{font-weight:700;
+                letter-spacing:.08em;
+                font-size:14px}
+.logo{display:inline-grid;
+                place-items:center;
+                width:34px;
+                height:34px;
+                border-radius:50%;
+                background:var(--accent);
+                color:white;
+                margin-right:8px}
+ nav{display:flex;
+                    gap:18px;
+                    align-items:center}
+ nav a{font-size:13px;
+                        color:#4d5853}
+ nav a:hover{color:var(--accent)}
+.menu{display:none;
+                    border:0;
+                    background:none;
+                    font-size:25px}
+.hero{min-height:590px;
+    display:grid;
+    align-items:center;
+    background:linear-gradient(90deg,rgba(18,37,31,.9),rgba(18,37,31,.42)),url("https://images.unsplash.com/photo-1438032005730-c779502df39b?auto=format&fit=crop&w=1800&q=80") center/cover}
+.hero-content{max-width:1180px;width:100%;
+        margin:auto;
+        padding:80px 24px;
+        color:white}
+.hero h1,
+.page-hero h1{font-family:"Playfair Display",serif;
+        font-size:clamp(42px,7vw,78px);
+        line-height:1.08;
+        margin:12px 0 22px}
+.hero p{max-width:560px;
+            font-size:18px}
+.eyebrow{font-size:12px;
+                font-weight:700;
+                letter-spacing:.18em;
+                color:var(--gold)}
+.actions{display:flex;gap:12px;margin-top:28px}
+    
+    
+.btn{display:inline-block;border:0;
+    border-radius:5px;
+    background:var(--accent);
+    color:white;
+    padding:12px 20px;
+    font-weight:700;
+    cursor:pointer}
+.hero 
+.btn{background:rgb(203, 162, 27);
+        color:var(--accent)}
+.btn
+.outline{background:transparent;
+            color:inherit;
+            border:4px solid currentColor}
+            
+.section{max-width:1180px;
+    margin:auto;
+    padding:80px 24px}
+.section
+.alt{max-width:none;
+    background:var(--cream)}
+.section
+.alt>
+.split{max-width:1180px;
+        margin:auto}
+.section h2{font-family:"Playfair Display",serif;
+            font-size:40px;
+            line-height:1.2;
+            margin:8px 0 18px}
+            
+.section-head{display:flex;
+    justify-content:space-between;
+    align-items:end;
+    margin-bottom:30px}
+.cards{display:grid;
+    gap:20px;
+    border-color: #63d0b1;}
+    
+.cards
+.three{grid-template-columns:repeat(3,1fr)}
+.cards
+.two{grid-template-columns:repeat(2,1fr)}
+.card{border:1px solid var(--line);
+    padding:28px;
+    background:rgba(204, 208, 164, 0.6);
+    border-radius:10px}
+.card h3{margin:8px 0;
+    font-size:21px}
+.icon{font-size:25px}
+.tag,
+.date{display:inline-block;
+    font-size:11px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--gold);font-weight:700}
+.date{background:var(--cream);
+        padding:8px 10px;border-radius:4px}
+.split{display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:60px;
+            align-items:center}
+.quote{font-family:"Playfair Display",serif;
+    font-size:32px;
+    background:white;
+    padding:50px;
+    border-left:4px solid var(--gold);
+    border-radius:8px}
+.quote small{display:block;
+        font:500 13px "DM Sans";
+        color:var(--muted);
+        margin-top:18px}.text-link{color:var(--accent);
+        font-weight:700}
+.page-hero{padding:100px 24px;
+            background:var(--cream);
+            text-align:center}
+.page-hero h1{font-size:clamp(42px,6vw,65px);
+    margin:10px auto 15px}
+.page-hero p{max-width:620px;margin:auto;
+        color:var(--muted)}
+.narrow{max-width:760px}
+.toolbar{display:flex;
+            gap:12px;
+            margin-bottom:28px}
+.toolbar input,
+.toolbar select,
+.form input,
+.form textarea{width:100%;
+                padding:13px 14px;
+                border:1px solid var(--line);
+                border-radius:6px;font:inherit;
+                background:white}
+.toolbar select{max-width:190px}
+.small-btn{margin-top:10px;
+    border:1px solid var(--accent);
+    background:white;
+    color:var(--accent);
+    padding:8px 12px;
+    border-radius:5px;
+    cursor:pointer}
+.form{display:grid;
+        gap:18px}
+.form label{font-weight:600}
+.form input,
+.form textarea{display:block;
+            margin-top:7px}
+.bible-box{background:var(--accent);
+    color:white;
+    padding:50px;
+    border-radius:12px;
+    text-align:center;
+    margin-bottom:30px}
+.verse{font-family:"Playfair Display",serif;
+    font-size:30px;
+    max-width:700px;
+    margin:15px auto}
+.bible-box small{color:#ddd}
+.avatar{width:90px;
+    height:90px;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    background:var(--cream);
+    font-size:30px;
+    font-weight:700;
+    color:var(--accent);
+    margin-bottom:20px}
+.leader{text-align:center}
+.leader 
+.avatar{margin:0 auto 15px}
+.give-card{border:1px solid var(--line);
+    padding:40px;
+    border-radius:12px}
+.notice{padding:15px;
+        background:var(--cream);
+        border-radius:6px;
+        color:var(--muted)}
+        /*givenform*/
+.give-form{display:grid;gap:24px;margin-top:24px}
+.field-group{display:grid;gap:8px}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.give-form label{font-weight:600;color:var(--ink)}
+.give-form input,
+.give-form select{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:8px;font:inherit;background:white;color:var(--ink)}
+.payment-options{display:flex;gap:12px;flex-wrap:wrap}
+.method-option{display:flex;align-items:center;gap:10px;padding:12px 16px;border:1px solid var(--line);border-radius:8px;background:var(--cream);cursor:pointer;font-weight:500}
+.method-option input{width:auto;margin:0}
+.card-fields{display:grid;gap:18px;padding:20px;border:1px solid var(--line);border-radius:10px;background:#faf8f3}
+.transfer-box{padding:20px 22px;border:1px solid var(--line);border-radius:10px;background:var(--cream)}
+.transfer-box.hidden{display:none}
+.transfer-box h3{margin:0 0 12px}
+.bank-details{list-style:none;padding:0;margin:0;display:grid;gap:8px;color:var(--ink)}
+.bank-details li{padding:8px 0;border-bottom:1px solid rgba(24,35,31,0.08)}
+.bank-details li:last-child{border-bottom:0}
+footer{background:#67c3a9;
+        color:#0637e7;
+        padding:55px max(24px,calc((100% - 1180px)/2));
+        display:grid;grid-template-columns:2fr 1fr 1fr 1fr;
+        gap:30px}footer 
+.brand{color:rgb(255, 255, 255)}footer h4{color:white;
+        margin-top:0}footer a{display:block;
+                    
+        margin:5px 0}
+.toast{position:fixed;
+    bottom:25px;
+    right:25px;
+    background:#18231f;
+    color:white;
+    padding:14px 18px;
+    border-radius:7px;
+    display:none;z-index:30}
+.toast.show{display:block}
+@media(max-width:900px){nav{display:none;
+    position:absolute;
+    top:72px;
+    left:0;
+    right:0;
+    background:white;
+    padding:18px 24px;
+    border-bottom:1px solid var(--line);
+    flex-direction:column;
+    align-items:flex-start}
+    .menu{display:block}
+    .cards.three
+    {grid-template-columns:1fr}
+    .cards.two,
+    .split,
+    .field-row,
+    footer{grid-template-columns:1fr}
+    .hero{min-height:520px}
+    .section{padding:60px 20px}
+    .quote{padding:35px}
+    .toolbar{flex-direction:column}
+    .toolbar select{max-width:none}
+    footer{padding:45px 24px}}
+    /*other pages*/
+
+    .eyebrow{
+      font-size:40px;
+    }
+    .page-hero{
+        background-image: url();
+
+
+    }
+
+/* Prayer request form styles: edit this section to style the prayer form. */
+.section.narrow {
+    max-width: 760px;
+    padding-top: 56px;
+    padding-bottom: 80px;
+}
+
+.section.narrow .form {
+    padding: clamp(24px, 5vw, 42px);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--paper);
+    box-shadow: 0 16px 40px rgba(24, 35, 31, 0.08);
+}
+
+.section.narrow .form label {
+    color: var(--ink);
+}
+
+.section.narrow .form input,
+.section.narrow .form textarea {
+    border-color: #d7ddd8;
+    transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.section.narrow .form input:focus,
+.section.narrow .form textarea:focus {
+    border-color: var(--accent);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(36, 79, 69, 0.14);
+}
+
+.section.narrow .form textarea {
+    min-height: 170px;
+    resize: vertical;
+}
+
+.section.narrow .form .btn {
+    justify-self: start;
+}
+
+@media (max-width: 600px) {
+    .section.narrow {
+        padding-top: 36px;
+        padding-bottom: 56px;
+    }
+
+    .section.narrow .form .btn {
+        width: 100%;
+    }
+}
+

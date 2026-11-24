@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact | Grace Community Church</title>
+<meta name="description" content="Grace Community Church">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <a class="brand" href="index.html">
+                <span class="logo">✦</span> GRACE COMMUNITY</a>
+
+<button class="menu" onclick="toggleMenu()">☰</button>
+<nav id="navLinks">
+    <a href="index">Home</a>
+    <a href="about">About</a>
+    <a href="sermons">Sermons</a>
+    <a href="events">Events</a>
+    <a href="prayer">Prayer</a>
+    <a href="bible">Bible</a>
+    <a href="ministries">Ministries</a>
+    <a href="leadership">Leadership</a>
+    <a href="give">Give</a>
+    <a href="contact">Contact</a>
+</nav>
+</div>
+</header>
+
+<main>
+     <section class="page-hero">
+        <span class="eyebrow">CONTACT</span>
+        <h1>We'd love to hear from you</h1>
+        <p>Come worship with us or send us a message.</p>
+    </section>
+     <section class="section">
+        <div class="split">
+            <div>
+                <h2>Visit us</h2>
+                <p><strong>Address:</strong> Your Church Address</p>
+                <p><strong>Phone:</strong> +234 000 000 0000</p>
+                <p><strong>Email:</strong> hello@yourchurch.org</p>
+                <p><strong>Services:</strong> Sunday 8:00 AM & 10:00 AM</p>
+            </div>
+                <form class="form" onsubmit="submitForm(event,'Thank you! Your message has been received.')">
+                    <label>Name<input required name="name">
+                    </label>
+                    <label>Email<input required type="email" name="email">
+                    </label><label>Message<textarea required name="message" rows="6">
+
+                    </textarea>
+                </label>
+                <button class="btn" type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+     </main>
+     <footer>
+        <div>
+            <a class="brand" href="index">
+                <span class="logo">✦</span> GRACE COMMUNITY</a>
+                <p>A place to belong, believe and become.</p>
+            </div>
+            <div>
+                <h4>Quick links</h4>
+                <a href="sermons">Sermons</a>
+                <a href="events">Events</a>
+                <a href="contact">Contact</a>
+            </div>
+            <div>
+                <h4>Service times</h4>
+
+                <p>Sunday · 8:00 AM & 10:00 AM<br>Wednesday · 5:30 PM</p>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <p>Facebook · Instagram · YouTube</p>
+            </div>
+        </footer>
+
+<div id="toast" class="toast">
+
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

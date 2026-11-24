@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Sermons | Grace Community Church</title>
+  <meta name="description" content="Grace Community Church">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+
+<body>
+    <%- include('partials/navbar') %>
+
+
+
+
+<main>
+
+
+
+
+<section class="page-hero"><span class="eyebrow">SERMONS</span>
+
+  <h1>Messages that strengthen your faith</h1><p>Listen, watch and revisit messages from our church.</p>
+</section>
+<section class="section"><div class="toolbar">
+  <input id="sermonSearch" placeholder="Search sermons..." />
+
+
+  <select id="sermonFilter">
+    <option value="all">All topics</option>
+    <option>Faith</option>
+    <option>Prayer</option>
+    <option>Hope</option>
+  </select>
+</div>
+
+<div class="cards three" id="sermonGrid">
+
+  <article class="card sermon" data-topic="Faith">
+    <span class="tag">Faith</span>
+    <h3>Walking by Faith</h3>
+    <p>Sunday · 30 Aug 2026</p>
+    <button class="small-btn" onclick="showMessage('Sermon player coming next.')">▶ Play</button>
+  
+  </article>
+  <article class="card sermon" data-topic="Prayer">
+    <span class="tag">Prayer</span>
+    <h3>The Power of Prayer</h3>
+    <p>Wednesday · 26 Aug 2026</p>
+    <button class="small-btn" onclick="showMessage('Sermon player coming next.')">▶ Play</button>
+  </article>  
+
+
+
+
+  <article class="card sermon" data-topic="Hope">
+    <span class="tag">Hope</span>
+             <h3>Hope in Every Season</h3>
+         <p>Sunday · 23 Aug 2026</p>
+       <button class="small-btn" onclick="showMessage('Sermon player coming next.')">▶ Play</button>
+       </article>
+
+
+        </div>
+     </section>
+
+
+</main>
+
+
+<%- include('partials/footer') %>
+
+<div id="toast" class="toast"></div>
+<script src="/js/script.js"></script>
+</body>
+</html>

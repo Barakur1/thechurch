@@ -1,0 +1,162 @@
+<!doctype html>
+
+<html lang="en">
+     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Give | Grace Community Church</title>
+
+<meta name="description" content="Grace Community Church">
+
+<link rel="stylesheet" href="css/style.css">
+ </head>
+
+  <body>
+     <header>
+        <div class="nav">
+            <a class="brand" href="index">
+                <span class="logo">✦</span> GRACE MINISTRIY CHURCH</a>
+
+<button class="menu" onclick="toggleMenu()">☰</button>
+<nav id="navLinks"><a href="index">Home</a>
+       <a href="about">About</a>
+       <a href="sermons">Sermons</a>
+       <a href="events">Events</a>
+       <a href="prayer">Prayer</a>
+       <a href="bible">Bible</a>
+       <a href="ministries">Ministries</a>
+       <a href="leadership">Leadership</a>
+       <a href="give">Give</a>
+       <a href="contact">Contact</a>
+    </nav>
+</div>
+     </header>
+
+<main>
+         <section class="page-hero"> 
+            <span class="eyebrow">GIVING</span>
+            
+            <h1>Give with a willing heart</h1>
+            <p>Your generosity helps support ministry and community outreach.</p>
+        </section>
+
+
+
+            <section class="section narrow">
+                  <div class="give-card">
+                    <h2>Give securely</h2>
+                    <p>Choose your giving type and select how you would like to pay. You can give by card or by bank transfer.</p>
+
+                    <form class="give-form">
+                        <div class="field-group">
+                            <label for="gift-type">Giving type</label>
+                            <select id="gift-type" name="gift-type">
+                                <option value="">Select</option>
+                                <option value="Tithes">Tithes</option>
+                                <option value="Offering">Offering</option>
+                                <option value="Donation">Donation</option>
+                                <option value="Missions">Missions</option>
+                            </select>
+                        </div>
+
+                        <div class="field-group">
+                            <label>Payment method</label>
+                            <div class="payment-options">
+                                <label class="method-option">
+                                    <input id="method-card" type="radio" name="payment-method" value="card" checked>
+                                    <span>Card payment</span>
+                                </label>
+                                <label class="method-option">
+                                    <input id="method-bank" type="radio" name="payment-method" value="bank">
+                                    <span>Bank transfer</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="field-row">
+                            <div class="field-group">
+                                <label for="amount">Amount</label>
+                                <input id="amount" name="amount" type="number" placeholder="5000" min="1">
+                            </div>
+                            <div class="field-group">
+                                <label for="donor-name">Full name</label>
+                                <input id="donor-name" name="donor-name" type="text" placeholder="Your full name">
+                            </div>
+                        </div>
+
+                        <div class="card-fields">
+                            <div class="field-group">
+                                <label for="card-name">Cardholder name</label>
+                                <input id="card-name" name="card-name" type="text" placeholder="Name on card">
+                            </div>
+
+                            <div class="field-group">
+                                <label for="card-number">Card number</label>
+                                <input id="card-number" name="card-number" type="text" placeholder="1234 5678 9012 3456">
+                            </div>
+
+                            <div class="field-row">
+                                <div class="field-group">
+                                    <label for="expiry">Expiry date</label>
+                                    <input id="expiry" name="expiry" type="text" placeholder="MM/YY">
+                                </div>
+                                <div class="field-group">
+                                    <label for="cvv">CVV</label>
+                                    <input id="cvv" name="cvv" type="text" placeholder="123">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="transfer-box hidden" aria-live="polite">
+                            <h3>Bank transfer details</h3>
+                            <ul class="bank-details">
+                                <li><strong>Bank:</strong> First National Bank</li>
+                                <li><strong>Account name:</strong> Grace Community Church</li>
+                                <li><strong>Account number:</strong> 1234567890</li>
+                                <li><strong>Sort code:</strong> 10-20-30</li>
+                                <li><strong>Reference:</strong> Your full name + giving type</li>
+                            </ul>
+                        </div>
+
+                        <button class="btn" type="submit">Submit donation</button>
+                    </form>
+                </div>
+            </section>
+
+</main>
+
+<footer>
+
+    <div>
+          <a class="brand" href="index">
+            <span class="logo">✦</span> GRACE COMMUNITY</a>
+            <p>A place to belong, believe and become.</p>
+        </div>
+
+
+        <div>
+            <h4>Quick links</h4>
+            <a href="sermons">Sermons</a>
+            <a href="event">Events</a>
+            <a href="contact">Contact</a>
+        </div>
+
+
+        <div>
+            <h4>Service times</h4>
+            <p>Sunday · 8:00 AM & 10:00 AM<br>Wednesday · 5:30 PM</p>
+        </div>
+
+        <div>
+            <h4>Connect</h4>
+            <p>Facebook · Instagram · YouTube</p>
+        </div>
+    </footer>
+
+<div id="toast" class="toast">
+
+</div>
+<script src="js/app.js"></script>
+</body> 
+</html>

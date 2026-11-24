@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Prayer Request | Grace Community Church</title>
+<meta name="description" content="Grace Community Church">
+<link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+
+    <header>
+
+
+        <div class="nav">
+
+            <a class="brand" href="index.html">
+                <span class="logo"></span> GRACE COMMUNITY</a>
+                
+<button class="menu" onclick="toggleMenu()">☰</button>
+<nav id="navLinks">
+    <a href="index">Home</a>
+    <a href="about">About</a>
+    <a href="sermons">Sermons</a>
+    <a href="events">Events</a>
+    <a href="/prayer">Prayer</a>
+    <a href="bible">Bible</a>
+    <a href="ministries">Ministries</a>
+    <a href="leadership">Leadership</a>
+    <a href="give">Give</a>
+    <a href="contact">Contact</a>
+</nav>
+
+
+</div>
+
+</header>
+
+<main>
+
+<section class="page-hero">
+    <span class="eyebrow">PRAYER</span>
+    <h1>We would love to pray with you</h1>
+    <p>Share a prayer request with our prayer team.</p>
+</section>
+
+
+<section class="section narrow">
+    <form class="form" onsubmit="submitForm(event,'Your prayer request has been received. Thank you for sharing.')">
+
+        <label>Name (optional)<input name="name">
+            
+        </label>
+        <label>Email (optional)<input type="email" name="email">
+
+        </label>
+
+        <label>Prayer request<textarea required name="request" rows="7" placeholder="Write your prayer request...">
+
+        </textarea>
+
+    </label>
+    <button class="btn" type="submit">Send Prayer Request</button>
+
+</form>
+
+</section>
+
+</main>
+
+
+<footer>
+    <div>
+        <a class="brand" href="index.html">
+            <span class="logo">
+
+            </span> GRACE COMMUNITY</a>
+
+            <p>A place to belong, believe and become.</p>
+
+        </div>
+        <div>
+            <h4>Quick links</h4>
+            <a href="sermons.html">Sermons</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div>
+            <h4>Service times</h4>
+            <p>Sunday · 8:00 AM & 10:00 AM<br>Wednesday · 5:30 PM</p>
+        </div>
+        <div>
+            <h4>Connect</h4>
+            <p>Facebook · Instagram · YouTube</p>
+        </div>
+
+    </footer>
+
+
+<div id="toast" class="toast">
+
+</div>
+<script src="/js/script.js"></script>
+
+
+
+</body>
+</html>

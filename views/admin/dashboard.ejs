@@ -1,0 +1,41 @@
+<!-- views/admin/dashboard.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css"> <!-- Adjust path to your CSS -->
+</head>
+<body>
+    <div className="admin-container">
+        <aside class="sidebar">
+            <h2>Admin Panel</h2>
+            <ul>
+                <li><a href="/admin/dashboard">Dashboard</a></li>
+                <li><a href="/admin/users">Manage Users</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <h1>Welcome back, <%= user ? user.name : 'Administrator' %></h1>
+            
+            <div class="metrics-grid">
+                <div class="card">
+                    <h3>Total Users</h3>
+                    <p><%= stats.totalUsers %></p>
+                </div>
+                <div class="card">
+                    <h3>Active Sessions</h3>
+                    <p><%= stats.activeSessions %></p>
+                </div>
+                <div class="card">
+                    <h3>Pending Approvals</h3>
+                    <p><%= stats.pendingApprovals %></p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
