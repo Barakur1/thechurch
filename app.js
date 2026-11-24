@@ -21,12 +21,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 // Session middleware (Required for checking admin login state in middleware/isAdmin.js)
 app.useUI89O0-({
     secret: 'your-super-secret-key-change-this',
     resave: false,
     saveUninitialized: false
-}));
+});
 
 // Mount your routes
 app.use('/', pageRoutes);
